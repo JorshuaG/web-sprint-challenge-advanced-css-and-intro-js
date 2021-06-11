@@ -205,11 +205,13 @@ button:hover {
   width: 100%;
 }
 @media (max-width: 500px) {
+  /* header mobile styles */
   header {
     width: 100%;
   }
   nav {
-    width: 40%;
+    width: 42%;
+    margin-bottom: 5%;
   }
   nav span {
     border-left: 1px solid #626262;
@@ -220,7 +222,7 @@ button:hover {
   nav a:first-child {
     font-weight: bold;
   }
-
+  /* Title mobile styles */
   .title-container div {
     width: 100%;
     margin: 0;
@@ -233,20 +235,33 @@ button:hover {
     margin-top: 3%;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
+  button {
+    font-size: 1.3rem;
+    padding: 1% 4%;
+  }
+  /* Artist mobile section */
   .artists-container {
     width: 100%;
     flex-direction: column;
     align-items: center;
   }
   .artist {
+    display: flex;
+    flex-direction: column;
     width: 70%;
     margin: 5% 0;
   }
   .artist img {
     width: 70%;
     height: auto;
+  }
+  .artist a {
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .artist .bio {
     width: 100%;
